@@ -10,6 +10,7 @@ import org.springframework.core.io.Resource;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Created by LaunchCode
  */
@@ -213,11 +214,13 @@ public class JobData {
         allLocations.sort(new NameSorter());
         return allLocations;
     }
+
     public static ArrayList<PositionType> getAllPositionTypes() {
         loadData();
         allPositionTypes.sort(new NameSorter());
         return allPositionTypes;
     }
+
     public static ArrayList<CoreCompetency> getAllCoreCompetency() {
         loadData();
         allCoreCompetency.sort(new NameSorter());
